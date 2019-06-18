@@ -12,5 +12,8 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
+        stage('Compile') {
+            sh 'mvn Hello.jar'
+        }
     }
 }
