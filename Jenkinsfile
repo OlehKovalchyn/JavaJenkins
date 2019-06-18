@@ -6,9 +6,8 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Build') {
             steps {
-                sh 'cd path_to_pom.xml'
                 sh 'mvn clean install'
                 sh 'mvn -B -DskipTests clean package' 
             }
