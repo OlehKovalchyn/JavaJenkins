@@ -13,7 +13,9 @@ pipeline {
             }
         }
         stage('Compile') {
+            steps{
             sh 'mvn Hello.jar'
+            }
         }
     }
 }
