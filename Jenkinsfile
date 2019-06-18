@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn ./Hello.java'
+                sh 'mvn -Hello.java'
             }
         }
     }
