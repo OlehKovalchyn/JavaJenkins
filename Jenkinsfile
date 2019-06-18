@@ -7,7 +7,7 @@ pipeline {
                jdk "Oracle JDK 8"
             }
             steps {
-                sh 'java Hello.jar'
+                sh 'java -jar Hello.jar'
             }
         }          
    }
