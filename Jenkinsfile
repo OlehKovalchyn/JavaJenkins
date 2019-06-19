@@ -24,7 +24,6 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'root ALL=(ALL) ALL'
                 sh 'set +x deliver.sh'
                 sh './deliver.sh'
             }
