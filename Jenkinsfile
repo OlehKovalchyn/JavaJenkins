@@ -27,10 +27,10 @@ pipeline {
                 
                 
                 
-                sh 'mvn jar:jar install:install help:evaluate -Dexpression=project.name'
-                sh 'NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`'
-                sh 'VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`'
-                sh 'java -jar target/${NAME}-${VERSION}.jar'
+                sh 'visudo mvn jar:jar install:install help:evaluate -Dexpression=project.name'
+                sh 'visudo NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`'
+                sh 'visudo VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`'
+                sh 'visudo java -jar target/${NAME}-${VERSION}.jar'
                 
             }
         }
