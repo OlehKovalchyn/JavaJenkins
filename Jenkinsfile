@@ -24,13 +24,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                
-                
-                
-                
-                sh 'visudo NAME=`mvn help:evaluate -Dexpression=project.name'
-                sh 'visudo VERSION=`mvn help:evaluate -Dexpression=project.version`'
-                sh 'visudo java -jar target/${NAME}-${VERSION}.jar'
+                sh 'visudo chmod +x deliver.sh'
+                sh 'visudo ./delive.sh'
                 
             }
         }
