@@ -25,7 +25,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh 'visudo chmod +x ./deliver.sh'
-                sh 'visudo ./delive.sh'
+                sh 'visudo ./script.sh'
                 
             }
         }
