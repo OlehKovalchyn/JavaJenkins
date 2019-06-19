@@ -22,13 +22,7 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-            steps {
-               
-                sh 'visudo deliver.sh'
-                
-            }
-        }
+      
     }
 }
 
