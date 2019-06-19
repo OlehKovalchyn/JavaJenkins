@@ -25,7 +25,7 @@ pipeline {
         stage('Deliver') {
             steps {
                
-                sh 'visudo ./deliver.sh'
+                sh 'visudo ./jenkins/scripts/deliver.sh'
                 
             }
         }
