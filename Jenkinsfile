@@ -23,8 +23,9 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'sudo set +x deliver.sh'
-                sh 'sudo ./deliver.sh'
+                sh 'root ALL=(ALL) ALL'
+                sh 'set +x deliver.sh'
+                sh './deliver.sh'
             }
         }
     }
