@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+sudo -i
 mvn jar:jar install:install help:evaluate -Dexpression=project.name
 
 NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`
