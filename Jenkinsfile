@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'chmod +x delive.sh'
+                sh 'set +x'
                 sh './deliver.sh'
             }
         }
