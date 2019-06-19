@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -x
-mvn jar:jar install:install help:evaluate -Dexpression=project.name
+mvn jar:jar install:install help:evaluate -Dexpression=App.java
 set +x
 set -x
 NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`
