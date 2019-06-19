@@ -25,7 +25,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh 'set +x deliver.sh'
-                sh ' ./deliver.sh'
+                sh 'sudo ./deliver.sh'
             }
         }
     }
